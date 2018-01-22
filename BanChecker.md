@@ -42,6 +42,6 @@ This is an example bans.json file. In here, we configure what servers to use and
 
 `Ban Keys` - A list of strings indicating a ban. We use this so accounts that are blocked for proxies aren't miss matched.
 
-`Match` - An opitional parameter instructing ATCrack how to connect to some specific servers. In general, you won't have to touch this.
+`Match` - An optional parameter instructing ATCrack how to connect to some specific servers. In general, you won't have to touch this.
 
 # And that's it! If you need any help, DM jp.
