@@ -37,8 +37,11 @@ The Ban Checker is configured using a `bans.json` in the same directory as `Crac
 This is an example bans.json file. In here, we configure what servers to use and some additional proxies. The servers we are checking are `Mineplex` and `Hypixel`. The `Proxies` segment is for special proxies used during checking. Note, you only need to do specify additional proxies in `Back Connect` mode.
 ### Server parts
 `IP` - The IP and Port of the server you wish to check
+
 `Name` - The simple name for this server, if one isnt provided then the IP will be used
+
 `Ban Keys` - A list of strings indicating a ban. We use this so accounts that are blocked for proxies aren't miss matched.
+
 `Match` - An opitional parameter instructing ATCrack how to connect to some specific servers. In general, you won't have to touch this.
 
 # And that's it! If you need any help, DM jp.
