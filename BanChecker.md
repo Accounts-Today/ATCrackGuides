@@ -3,7 +3,7 @@ The atcrack ban checker is a unique addon for ATCrack that allows you to check b
 ## How It Works
 The Ban Checker is configured using a `bans.json` in the same directory as `Cracker.jar` file. Both servers and their associated details are placed in this file, and it is the file atcrack will use when checking for bans on servers
 ## The bans.json file
-```
+```es6
 {
   "servers": [
     {
