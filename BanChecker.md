@@ -5,6 +5,7 @@ The Ban Checker is configured using a `bans.json` in the same directory as `Crac
 ## The bans.json file
 ```es6
 {
+  "reqChange":false, //Indicates whether your proxies change every request (I.E storm proxes). RSocks for instance are backconnect, but do not change IP every request, therefore for RSocks this would be disabled.
   "servers": [
     {
       "ip": "us.mineplex.com:25565",
@@ -34,7 +35,8 @@ The Ban Checker is configured using a `bans.json` in the same directory as `Crac
   ]
 }
 ```
-This is an example bans.json file. In here, we configure what servers to use and some additional proxies. The servers we are checking are `Mineplex` and `Hypixel`. The `Proxies` segment is for special proxies used during checking. Note, you only need to do specify additional proxies in `Back Connect` mode.
+This is an example bans.json file. In here, we configure what servers to use and some additional proxies. The servers we are checking are `Mineplex` and `Hypixel`. The `Proxies` segment is for special proxies used during checking. Note, you **only need to do specify additional proxies** if `reqChange` is true..
+
 ### Server parts
 `IP` - The IP and Port of the server you wish to check
 
@@ -42,6 +44,6 @@ This is an example bans.json file. In here, we configure what servers to use and
 
 `Ban Keys` - A list of strings indicating a ban. We use this so accounts that are blocked for proxies aren't miss matched.
 
-`Match` - An optional parameter instructing ATCrack how to connect to some specific servers. In general, you won't have to touch this.
+`Match` - An optional parameter instructing ATCrack how to connect to some specific servers. In general, you won't have to touch this. Basically, match indicates that the authentication and connecting IP need to match for the server to work (Like how Hypixel blocks MCLeaks). Match tells ATCrack to re authenticate using one of the special proxies, and connect with that to bypass the block.
 
 # And that's it! If you need any help, DM jp.
