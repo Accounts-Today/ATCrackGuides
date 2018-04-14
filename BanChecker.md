@@ -5,7 +5,7 @@ The Ban Checker is configured using a `bans.json` in the same directory as `Crac
 ## The bans.json file
 ```es6
 {
-  "reqChange":false, //Indicates whether your proxies change every request (I.E storm proxes). RSocks for instance are backconnect, but do not change IP every request, therefore for RSocks this would be disabled.
+  "request_change":false, //Indicates whether your proxies change every request (I.E storm proxes). RSocks for instance are backconnect, but do not change IP every request, therefore for RSocks this would be disabled.
   "servers": [
     {
       "ip": "us.mineplex.com:25565",
